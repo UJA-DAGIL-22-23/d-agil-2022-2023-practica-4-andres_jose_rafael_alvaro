@@ -1,2 +1,29 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/hCaQWL7N)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10906653&assignment_repo_type=AssignmentRepo)
+## Tablero Trello
+
+https://trello.com/b/LyGkuN4w/pr%C3%A1ctica-4
+
+## Información de los estudiantes:
+
+Estudiante 1:
+- Nombre: Andrés Serrano Barajas 
+- Correo: asb00028@red.ujaen.es
+
+Estudiante 2:
+- Nombre: José Ángel Ángeles Santiago 
+- Correo: 
+
+Estudiante 3:
+- Nombre: Rafael Montes Expósito 
+- Correo: 
+
+Estudiante 4:
+- Nombre: Álvaro Ramírez Díaz 
+- Correo: ard00032@red.ujaen.es
+
+## Descripción del incremento
+
+Imagen inicial del tablero de trello creado:
+
+<img src='imagenes/trello-inicio.PNG' heigth='100' width='360'>
+
+

@@ -26,4 +26,8 @@ Imagen inicial del tablero de trello creado:
 
 <img src='imagenes/trello-inicio.PNG' heigth='100' width='360'>
 
+Imagen del product backlog con las HU escogidas:
+
+<img src='imagenes/decision-product-backlog.PNG' heigth='100' width='360'>
+
 

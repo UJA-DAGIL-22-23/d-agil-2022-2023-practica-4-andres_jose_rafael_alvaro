@@ -95,7 +95,7 @@ const CB_OTHERS = {
                 mensaje: "Microservicio MS Plantilla: acerca de",
                 autor: "Andrés",
                 email: "asb00028@red.ujaen.es",
-                fecha: "21-03-2023"
+                fecha: "21-03-2022"
             });
         } catch (error) {
             CORS(res).status(500).json({ error: error.description })

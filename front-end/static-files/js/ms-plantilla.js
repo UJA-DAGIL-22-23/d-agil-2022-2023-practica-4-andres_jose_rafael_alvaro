@@ -13,9 +13,18 @@ let Plantilla = {};
 // Plantilla de datosDescargados vacíos
 Plantilla.datosDescargadosNulos = {
     mensaje: "Datos Descargados No válidos",
-    autor: "",
-    email: "",
-    fecha: ""
+    autor1: "Andrés",
+    email1: "asb00028@red.ujaen.es",
+    fecha1: "11-05-2023",
+    autor2: "Autor 2",
+    email2: "autor2@red.ujaen.es",
+    fecha2: "11-05-2023",
+    autor3: "Autor 3",
+    email3: "autor3@red.ujaen.es",
+    fecha3: "11-05-2023",
+    autor4: "Autor 4",
+    email4: "autor4@red.ujaen.es",
+    fecha4: "11-05-2023"
 }
 
 /**
@@ -82,9 +91,21 @@ Plantilla.mostrarAcercaDe = function (datosDescargados) {
     const mensajeAMostrar = `<div>
     <p>${datosDescargados.mensaje}</p>
     <ul>
-        <li><b>Autor/a</b>: ${datosDescargados.autor}</li>
-        <li><b>E-mail</b>: ${datosDescargados.email}</li>
-        <li><b>Fecha</b>: ${datosDescargados.fecha}</li>
+        <li><b>Autor 1</b>: ${datosDescargados.autor1}</li>
+        <li><b>E-mail 1</b>: ${datosDescargados.email1}</li>
+        <li><b>Fecha 1</b>: ${datosDescargados.fecha1}</li>
+        </br>
+        <li><b>Autor 2</b>: ${datosDescargados.autor2}</li>
+        <li><b>E-mail 2</b>: ${datosDescargados.email2}</li>
+        <li><b>Fecha 2</b>: ${datosDescargados.fecha2}</li>
+        </br>
+        <li><b>Autor 3</b>: ${datosDescargados.autor3}</li>
+        <li><b>E-mail 3</b>: ${datosDescargados.email3}</li>
+        <li><b>Fecha 3</b>: ${datosDescargados.fecha3}</li>
+        </br>
+        <li><b>Autor 4</b>: ${datosDescargados.autor3}</li>
+        <li><b>E-mail 4</b>: ${datosDescargados.email3}</li>
+        <li><b>Fecha 4</b>: ${datosDescargados.fecha3}</li>
     </ul>
     </div>
     `;

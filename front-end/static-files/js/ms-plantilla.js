@@ -13,18 +13,9 @@ let Plantilla = {};
 // Plantilla de datosDescargados vacíos
 Plantilla.datosDescargadosNulos = {
     mensaje: "Datos Descargados No válidos",
-    autor1: "Andrés",
-    email1: "asb00028@red.ujaen.es",
-    fecha1: "11-05-2023",
-    autor2: "Autor 2",
-    email2: "autor2@red.ujaen.es",
-    fecha2: "11-05-2023",
-    autor3: "Autor 3",
-    email3: "autor3@red.ujaen.es",
-    fecha3: "11-05-2023",
-    autor4: "Autor 4",
-    email4: "autor4@red.ujaen.es",
-    fecha4: "11-05-2023"
+    autor: "Datos nulos",
+    email: "Correo nulo",
+    fecha: "-"
 }
 
 /**
@@ -87,7 +78,7 @@ Plantilla.mostrarAcercaDe = function (datosDescargados) {
         typeof datosDescargados.email === "undefined" ||
         typeof datosDescargados.fecha === "undefined"
     ) datosDescargados = this.datosDescargadosNulos
-
+    
     const mensajeAMostrar = `<div>
     <p>${datosDescargados.mensaje}</p>
     <ul>

@@ -15,18 +15,9 @@ const TITULO_ACERCA_DE = "Plantilla Acerca de"
 
 const datosDescargadosPrueba = {
     mensaje: "Mensaje de prueba descargado",
-    autor1: "Andrés",
-    email1: "asb00028@red.ujaen.es",
-    fecha1: "11/05/2023",
-    autor2: "autor 2",
-    email2: "autor2@red.ujaen.es",
-    fecha2: "11/05/2023",
-    autor3: "autor 3",
-    email3: "autor3@red.ujaen.es",
-    fecha3: "11/05/2023",
-    autor4: "autor 4",
-    email4: "autor4@red.ujaen.es",
-    fecha4: "11/05/2023"
+    autor: "Autor de prueba",
+    email: "Correo de prueba",
+    fecha: "00/0/0000",
 }
 
 

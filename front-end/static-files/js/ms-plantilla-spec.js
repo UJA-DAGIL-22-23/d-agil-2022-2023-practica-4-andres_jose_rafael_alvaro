@@ -117,9 +117,9 @@ describe("Plantilla.mostrarAcercaDe: ", function () {
             expect(elementoTitulo.innerHTML).toBe(TITULO_ACERCA_DE)
 
             // Comprobamos que al buscar el autor, el email y la fecha de prueba los encuentra dentro del contenido del article
-            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.autor) >= 0).toBeTrue()
-            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.email) >= 0).toBeTrue()
-            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.fecha) >= 0).toBeTrue()
+            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.autor1) >= 0).toBeTrue()
+            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.email1) >= 0).toBeTrue()
+            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.fecha1) >= 0).toBeTrue()
         })
 })
 

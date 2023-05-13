@@ -12,10 +12,11 @@ let Plantilla = {};
 
 // Plantilla de datosDescargados vacíos
 Plantilla.datosDescargadosNulos = {
-    mensaje: "Datos Descargados No válidos",
-    autor: "Datos nulos",
-    email: "Correo nulo",
-    fecha: "-"
+    mensaje: "Microservicio MS Plantilla: acerca de",
+    autor1: "Andrés", email1: "asb00028@red.ujaen.es", fecha1: "21-03-2023",
+    autor2: "usuario2", email2: "usuario2@red.ujaen.es", fecha2: "21-03-2023",
+    autor3: "usuario3", email3: "usuario3@red.ujaen.es", fecha3: "21-03-2023",
+    autor4: "usuario4", email4: "usuario4@red.ujaen.es", fecha4: "21-03-2023"
 }
 
 /**
@@ -74,9 +75,9 @@ Plantilla.mostrarAcercaDe = function (datosDescargados) {
 
     // Si datos descargados NO contiene los campos mensaje, autor, o email
     if (typeof datosDescargados.mensaje === "undefined" ||
-        typeof datosDescargados.autor === "undefined" ||
-        typeof datosDescargados.email === "undefined" ||
-        typeof datosDescargados.fecha === "undefined"
+        typeof datosDescargados.autor1 === "undefined" ||
+        typeof datosDescargados.email1 === "undefined" ||
+        typeof datosDescargados.fecha1 === "undefined"
     ) datosDescargados = this.datosDescargadosNulos
     
     const mensajeAMostrar = `<div>

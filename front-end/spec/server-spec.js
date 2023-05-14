@@ -39,5 +39,15 @@ describe('Servidor FRONT-END:', () => {
           })
           .end((error) => { error ? done.fail(error) : done() })
       });
+      it('Devuelve Personas Acerca De', (done) => {
+        supertest(app)
+            .get('/acercade')
+            .expect(200)
+            .expect('Content-Type', /html/)
+            .expect(function (res) {
+                assert(res.text.search(" <h1>Aplicación Microservicios Plantilla</h1>")>=0)
+            })
+            .end((error) => { error ? done.fail(error) : done() })
+    });
   })
 })

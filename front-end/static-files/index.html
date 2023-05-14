@@ -20,12 +20,45 @@
 
 <body>
     <h1>Aplicación Microservicios Plantilla</h1>
-    <!-- Barra de navegación de la aplicación -->
+    <a href="javascript:Frontend.mostrarAcercaDeTodos()" class="opcion-principal"> Mostrar Acerca de</a>
+
+    <h2>Judo</h2>
+    <!-- Barra de navegación de Judo -->
     <nav>
-        <a href="javascript:Plantilla.procesarHome()" class="opcion-principal"
-            title="Llama a la ruta / del MS Plantilla">Home</a>
-        <a href="javascript:Plantilla.procesarAcercaDe()" class="opcion-principal"
-            title="Llama a la ruta /acercade del MS Plantilla">Acerca de</a>
+        <a href="javascript:judo.procesarHome()" class="opcion-principal"
+           title="Llama a la ruta / del MS Judo">Home</a>
+        <a href="javascript:judo.procesarAcercaDe()" class="opcion-principal"
+           title="Llama a la ruta /acercade del MS Judo">Acerca de</a>
+        <a href="javascript:judo.procesarListarNombres()" class="opcion-principal"
+           title="Listar nombres de los jugadores de la base de datos"> Listar nombres</a>
+            <a href="javascript:judo.procesarListarTodos()" class="opcion-principal"
+               title="Listar datos de los jugadores de la base de datos"> Listar datos</a>
+            <a href="javascript:judo.procesarCampoOrdenado('nombre')" class="opcion-principal mostrar"
+               title="Realiza un listado de los nombres de las personas ordenados">Listar nombres ordenados </a>
+            <a href="javascript:judo.mostrar('359267443240075468')" class="opcion-principal mostrar"
+               title="Muestra un jugador que hay en la BBDD">Muestra un jugador </a>
+
+        <div class="dropdown">
+            <button class="opcion-principal">Opciones para listar por orden de:</button>
+            <div class="dropdown-content">
+                <a href="javascript:judo.procesarCampoOrdenado('nombre')" class="opcion-principal"
+                     title="Realizar un listado de todos los nombres de todos los jugadores que hay en la BBDD ordenados alfabeticamente">Nombre</a>
+                <a href="javascript:judo.procesarCampoOrdenado('apellidos')" class="opcion-principal"
+                    title="Realizar un listado de todos los nombres de todos los jugadores que hay en la BBDD ordenados alfabeticamente">Apellido</a>
+                <a href="javascript:judo.procesarCampoOrdenado('direccion')" class="opcion-principal"
+                    title="Realizar un listado de todos los nombres de todos los jugadores que hay en la BBDD ordenados alfabeticamente">Direccion</a>
+                    <a href="javascript:judo.procesarCampoOrdenado('aniosActivo')" class="opcion-principal"
+                        title="Realizar un listado de todos los nombres de todos los jugadores que hay en la BBDD ordenados alfabeticamente">Años en activo</a>
+                    <a href="javascript:judo.procesarCampoOrdenado('nTorneosDisputados')" class="opcion-principal"
+                        title="Realizar un listado de todos los nombres de todos los jugadores que hay en la BBDD ordenados alfabeticamente">Numero Torneos disputados</a>
+                <a href="javascript:judo.procesarCampoOrdenado('nTorneosGanados')" class="opcion-principal"
+                    title="Realizar un listado de todos los nombres de todos los jugadores que hay en la BBDD ordenados alfabeticamente">Numero Torneos ganados</a>
+                <a href="javascript:judo.procesarCampoOrdenado('nLesiones')" class="opcion-principal"
+                    title="Realizar un listado de todos los nombres de todos los jugadores que hay en la BBDD ordenados alfabeticamente">Numero lesiones</a>
+
+                </div>
+            </div>
+       </nav>
     </nav>
 
     <!-- 
@@ -37,6 +70,7 @@
         <h2 id="seccion-principal-titulo"></h2>
         <!-- Contenido del article -->
         <div id="seccion-principal-contenido">
+            <div id="tabla-formulario-persona" class="ocultar"></div>
         </div>
     </article>
 
@@ -51,11 +85,13 @@
     <!-- Cargamos ficheros JS propios del proyecto -->
     <script src="js/front-end.js"></script>
     <script src="js/ms-plantilla.js"></script>
+    <script src="js/ms-judo.js"></script>
 
 
     <!-- Cargamos ficheros spec con los tests -->
     <script src="js/front-end-spec.js"></script>
     <script src="js/ms-plantilla-spec.js"></script>
+    <script src="js/ms-judo-spec.js"></script>
 
 </body>
 

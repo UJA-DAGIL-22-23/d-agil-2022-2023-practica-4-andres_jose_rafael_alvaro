@@ -61,3 +61,22 @@ describe("Frontend.Article.actualizar: ", function () {
         })
 
 })
+
+describe("Frontend.Article.mostrar", function() {
+
+
+    it("should remove the Frontend.CLASS_OCULTAR class from the HTML element", function() {
+        let element = document.createElement("div");
+        element.classList.add(Frontend.CLASS_OCULTAR);
+        spyOn(document, "getElementById").and.returnValue(element);
+        Frontend.Article.mostrar();
+        expect(element.classList.contains(Frontend.CLASS_OCULTAR)).toBe(false);
+    });
+
+    it("should add the Frontend.CLASS_MOSTRAR class to the HTML element", function() {
+        let element = document.createElement("div");
+        spyOn(document, "getElementById").and.returnValue(element);
+        Frontend.Article.mostrar();
+        expect(element.classList.contains(Frontend.CLASS_MOSTRAR)).toBe(true);
+    });
+});

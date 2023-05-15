@@ -12,11 +12,10 @@ let Plantilla = {};
 
 // Plantilla de datosDescargados vacíos
 Plantilla.datosDescargadosNulos = {
-    mensaje: "Microservicio MS Plantilla: acerca de",
-    autor1: "Andrés", email1: "asb00028@red.ujaen.es", fecha1: "21-03-2023",
-    autor2: "usuario2", email2: "usuario2@red.ujaen.es", fecha2: "21-03-2023",
-    autor3: "usuario3", email3: "usuario3@red.ujaen.es", fecha3: "21-03-2023",
-    autor4: "usuario4", email4: "usuario4@red.ujaen.es", fecha4: "21-03-2023"
+    mensaje: "Datos Descargados No válidos",
+    autor: "",
+    email: "",
+    fecha: ""
 }
 
 /**
@@ -75,29 +74,29 @@ Plantilla.mostrarAcercaDe = function (datosDescargados) {
 
     // Si datos descargados NO contiene los campos mensaje, autor, o email
     if (typeof datosDescargados.mensaje === "undefined" ||
-        typeof datosDescargados.autor1 === "undefined" ||
-        typeof datosDescargados.email1 === "undefined" ||
-        typeof datosDescargados.fecha1 === "undefined"
+        typeof datosDescargados.autor === "undefined" ||
+        typeof datosDescargados.email === "undefined" ||
+        typeof datosDescargados.fecha === "undefined"
     ) datosDescargados = this.datosDescargadosNulos
-    
+
     const mensajeAMostrar = `<div>
     <p>${datosDescargados.mensaje}</p>
     <ul>
-        <li><b>Autor 1</b>: ${datosDescargados.autor1}</li>
-        <li><b>E-mail 1</b>: ${datosDescargados.email1}</li>
-        <li><b>Fecha 1</b>: ${datosDescargados.fecha1}</li>
-        </br>
+        <li><b>Autor 1</b>: ${datosDescargados.autor}</li>
+        <li><b>E-mail 1</b>: ${datosDescargados.email}</li>
+        <li><b>Fecha 1</b>: ${datosDescargados.fecha}</li>
+        <br/>
         <li><b>Autor 2</b>: ${datosDescargados.autor2}</li>
         <li><b>E-mail 2</b>: ${datosDescargados.email2}</li>
         <li><b>Fecha 2</b>: ${datosDescargados.fecha2}</li>
-        </br>
+        <br/>
         <li><b>Autor 3</b>: ${datosDescargados.autor3}</li>
         <li><b>E-mail 3</b>: ${datosDescargados.email3}</li>
         <li><b>Fecha 3</b>: ${datosDescargados.fecha3}</li>
-        </br>
-        <li><b>Autor 4</b>: ${datosDescargados.autor3}</li>
-        <li><b>E-mail 4</b>: ${datosDescargados.email3}</li>
-        <li><b>Fecha 4</b>: ${datosDescargados.fecha3}</li>
+        <br/>
+        <li><b>Autor 4</b>: ${datosDescargados.autor4}</li>
+        <li><b>E-mail 4</b>: ${datosDescargados.email4}</li>
+        <li><b>Fecha 4</b>: ${datosDescargados.fecha4}</li>
     </ul>
     </div>
     `;
@@ -118,6 +117,8 @@ Plantilla.procesarHome = function () {
 Plantilla.procesarAcercaDe = function () {
     this.descargarRuta("/plantilla/acercade", this.mostrarAcercaDe);
 }
+
+
 
 
 

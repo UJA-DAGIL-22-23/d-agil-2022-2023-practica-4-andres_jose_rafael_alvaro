@@ -93,21 +93,9 @@ const CB_OTHERS = {
         try {
             CORS(res).status(200).json({
                 mensaje: "Microservicio MS Plantilla: acerca de",
-                autor1: "Andrés",
-                email1: "asb00028@red.ujaen.es",
-                fecha1: "21-03-2023",
-
-                autor2: "usuario2",
-                email2: "usuario2@red.ujaen.es",
-                fecha2: "21-03-2023",
-
-                autor3: "usuario3",
-                email3: "usuario3@red.ujaen.es",
-                fecha3: "21-03-2023",
-
-                autor4: "usuario4",
-                email4: "usuario4@red.ujaen.es",
-                fecha4: "21-03-2023"
+                autor: "Andrés",
+                email: "asb00028@red.ujaen.es",
+                fecha: "21-03-2023"
             });
         } catch (error) {
             CORS(res).status(500).json({ error: error.description })
@@ -120,3 +108,4 @@ const CB_OTHERS = {
 // MUY IMPORTANTE: No debe haber callbacks con el mismo nombre en los distintos objetos, porque si no
 //                 el último que haya SOBREESCRIBE a todos los anteriores.
 exports.callbacks = { ...CB_MODEL_SELECTS, ...CB_OTHERS }
+

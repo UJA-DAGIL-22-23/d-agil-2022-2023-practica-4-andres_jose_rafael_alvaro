@@ -10,11 +10,11 @@ Estudiante 1:
 
 Estudiante 2:
 - Nombre: José Ángel Ángeles Santiago 
-- Correo: 
+- Correo: @red.ujaen.es
 
 Estudiante 3:
 - Nombre: Rafael Montes Expósito 
-- Correo: 
+- Correo: @red.ujaen.es
 
 Estudiante 4:
 - Nombre: Álvaro Ramírez Díaz 
@@ -30,4 +30,6 @@ Imagen del product backlog con las HU escogidas:
 
 <img src='imagenes/decision-product-backlog.PNG' heigth='100' width='360'>
 
+HU-01 Terminada:
 
+<img src='imagenes/hu-01.PNG' heigth='100' width='360'>

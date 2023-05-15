@@ -15,9 +15,21 @@ const TITULO_ACERCA_DE = "Plantilla Acerca de"
 
 const datosDescargadosPrueba = {
     mensaje: "Mensaje de prueba descargado",
-    autor: "Autor de prueba",
-    email: "Correo de prueba",
-    fecha: "00/0/0000",
+    autor: "Andrés",
+    email: "asb00028@red.ujaen.es",
+    fecha: "11/05/2023",
+
+    autor2: "Usuario 2",
+    email2: "usuario2@red.ujaen.es",
+    fecha2: "11/05/2023",
+
+    autor3: "Usuario 3",
+    email3: "usuario3@red.ujaen.es",
+    fecha3: "11/05/2023",
+
+    autor4: "Usuario 4",
+    email4: "usuario4@red.ujaen.es",
+    fecha4: "11/05/2023"
 }
 
 
@@ -117,9 +129,9 @@ describe("Plantilla.mostrarAcercaDe: ", function () {
             expect(elementoTitulo.innerHTML).toBe(TITULO_ACERCA_DE)
 
             // Comprobamos que al buscar el autor, el email y la fecha de prueba los encuentra dentro del contenido del article
-            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.autor1) >= 0).toBeTrue()
-            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.email1) >= 0).toBeTrue()
-            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.fecha1) >= 0).toBeTrue()
+            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.autor) >= 0).toBeTrue()
+            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.email) >= 0).toBeTrue()
+            expect(elementoContenido.innerHTML.search(datosDescargadosPrueba.fecha) >= 0).toBeTrue()
         })
 })
 

@@ -104,6 +104,65 @@ Plantilla.mostrarAcercaDe = function (datosDescargados) {
 }
 
 
+
+// Codigo nuevo
+
+Plantilla.mostrarDeportistas = function (datosDescargados) {
+    const mensajeAMostrar = `<form method='post' action=''>
+    <table width="100%" class="listado-personas">
+        <thead>
+            <th width="10%">Id</th><th width="20%">Nombre</th><th width="20%">Apellidos</th><th width="10%">eMail</th>
+            <th width="15%">Año contratación</th><th width="25%">Acciones</th>
+        </thead>
+        <tbody>
+            <tr title="1234_ID_1234">
+                <td><input type="text" class="form-persona-elemento" disabled id="form-persona-id"
+                        value="1234_ID_1234}" 
+                        name="id_persona"/></td>
+                <td><input type="text" class="form-persona-elemento editable" disabled
+                        id="form-persona-nombre" required value="${Frontend.plantillaTags.NOMBRE}" 
+                        name="nombre_persona"/></td>
+                <td><input type="text" class="form-persona-elemento editable" disabled
+                        id="form-persona-apellidos" value="${Frontend.plantillaTags.APELLIDOS}" 
+                        name="apellidos_persona"/></td>
+                <td><input type="text" class="form-persona-elemento editable" disabled
+                        id="form-persona-email" required value="${Frontend.plantillaTags.SEXO}" 
+                        name="email_persona"/></td>
+                <td><input type="text" class="form-persona-elemento editable" disabled
+                        id="form-persona-anio" min="1950" max="2030" size="8" required
+                        value="${Frontend.plantillaTags["NACIMIENTO"]}" 
+                        name="año_entrada_persona"/></td>
+                <td><input type="number" class="form-persona-elemento editable" disabled
+                        id="form-persona-apellidos" value="${Frontend.plantillaTags.AÑO_INICIO}" 
+                        name="apellidos_persona"/></td>
+                <td><input type="text" class="form-persona-elemento editable" disabled
+                        id="form-persona-anio" min="1950" max="2030" size="8" required
+                        value="${Frontend.plantillaTags["DIRECCION"]}" 
+                        name="año_entrada_persona"/></td>
+                <td><input type="text" class="form-persona-elemento editable" disabled
+                        id="form-persona-email" required value="${Frontend.plantillaTags.CLASE_DEPORTIVA}" 
+                        name="email_persona"/></td>
+                <td><input type="text" class="form-persona-elemento editable" disabled
+                        id="form-persona-anio" min="1950" max="2030" size="8" required
+                        value="${Frontend.plantillaTags["AÑOS_JUGADOS"]}" 
+                        name="año_entrada_persona"/></td>
+                <td>
+                    <div><a href="javascript:Plantilla.editar()" class="opcion-secundaria mostrar">Editar</a></div>
+                    <div><a href="javascript:Plantilla.guardar()" class="opcion-terciaria editar ocultar">Guardar</a></div>
+                    <div><a href="javascript:Plantilla.cancelar()" class="opcion-terciaria editar ocultar">Cancelar</a></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+`;
+    Frontend.Article.actualizar("Plantilla Deportistas", mensajeAMostrar)
+}
+
+// Final Codigo nuevo
+
+
+
 /**
  * Función principal para responder al evento de elegir la opción "Home"
  */

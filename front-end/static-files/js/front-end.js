@@ -165,7 +165,7 @@ Frontend.plantillaTablaPersonas.pie = `        </tbody>
  * @param {Persona} Persona Objeto con los datos de la persona que queremos escribir en el TR
  * @returns La plantilla del cuerpo de la tabla con los datos actualizados 
  */           
-Personas.sustituyeTags = function (plantilla, persona) {
+ Frontend.sustituyeTags = function (plantilla, persona) {
     return plantilla
         .replace(new RegExp(Personas.plantillaTags.NOMBRE, 'g'), persona.ref['@ref'].nombre)
         .replace(new RegExp(Personas.plantillaTags.APELLIDOS, 'g'), persona.data.apellidos)
@@ -183,7 +183,7 @@ Personas.sustituyeTags = function (plantilla, persona) {
  * @param {Persona} Persona Objeto con los datos de la persona que queremos escribir en el TR
  * @returns La plantilla del cuerpo de la tabla con los datos actualizados 
  */
-Personas.plantillaFormularioPersona.actualiza = function (persona) {
+Frontend.plantillaFormularioPersona.actualiza = function (persona) {
     return Personas.sustituyeTags(this.formulario, persona)
 }
 
@@ -192,7 +192,7 @@ Personas.plantillaFormularioPersona.actualiza = function (persona) {
  * @param {función} callBackFn Función a la que se llamará una vez recibidos los datos.
  */
 
-Personas.recupera = async function (callBackFn) {
+Frontend.recupera = async function (callBackFn) {
     let response = null
 
     // Intento conectar con el microservicio personas
@@ -220,7 +220,7 @@ Personas.recupera = async function (callBackFn) {
  * @param {String} idPersona Identificador de la persona a mostrar
  * @param {función} callBackFn Función a la que se llamará una vez recibidos los datos.
  */
-Personas.recuperaUnaPersona = async function (idPersona, callBackFn) {
+Frontend.recuperaUnaPersona = async function (idPersona, callBackFn) {
     try {
         const url = Frontend.API_GATEWAY + "/personas/getPorId/" + idPersona
         const response = await fetch(url);

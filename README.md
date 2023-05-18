@@ -30,6 +30,21 @@ Imagen del product backlog con las HU escogidas:
 
 <img src='imagenes/decision-product-backlog.PNG' heigth='100' width='360'>
 
-HU-01 Terminada:
+HU-01 terminada:
 
 <img src='imagenes/hu-01.PNG' heigth='100' width='360'>
+
+HU-06 terminada:
+
+<img src='imagenes/hu-06.PNG' heigth='100' width='360'>
+
+
+## Sprint Review
+
+Lo que se ha hecho en este incremento y lo que no: Historias de usuario que se han hecho: la hu-01 y la hu-06
+
+## Sprint Retrospective
+
+Qué se ha hecho bien, qué se debería modificar, a qué se compromete cada miembro del equipo para el próximo Sprint...
+
+

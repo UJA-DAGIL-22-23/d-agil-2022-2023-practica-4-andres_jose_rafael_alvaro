@@ -32,7 +32,7 @@ Imagen del product backlog con las HU escogidas:
 
 HU-01 terminada:
 
-<img src='imagenes/hu-01.PNG' heigth='100' width='360'>
+<img src='imagenes/hu-1.PNG' heigth='100' width='360'>
 
 HU-06 terminada:
 

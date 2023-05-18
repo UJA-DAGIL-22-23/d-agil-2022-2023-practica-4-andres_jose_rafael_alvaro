@@ -55,3 +55,5 @@ La elección de historias de usuario se eligieron rápidamente por los integrant
 
 Ha faltado un poco de coordinación en el grupo, ha faltado más ramas en el repositorio para que cada uno supiera lo que estaba haciendo cada uno de nuestros compañeros.
 
+Ha faltado mas comunicación interna en el equipo. Aunque hemos tenido una aptitud muy positiva a ayudarnos mutuamente.
+

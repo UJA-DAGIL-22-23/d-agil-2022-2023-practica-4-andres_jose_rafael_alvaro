@@ -5,5 +5,110 @@
  * @date 03-Feb-2023
  */
 
+ /* Dropdown */
+ .dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown .dropbtn {
+    background-color: rgba(100, 100, 100, 0.5);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Tabla */
+table.listado-personas {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 100, 0.8);
+    text-align: center;
+    margin: 0 auto;
+}
+
+table.listado-personas thead th {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 2.5em;
+    text-transform: uppercase;
+    margin: 3px;
+}
+
+table.listado-personas tbody td {
+    padding: 0.5em;
+}
+
+table.listado-personas tbody tr {
+    background-color: rgba(0, 0, 100, 0.1);
+    height: 2em;
+    margin: 3px;
+}
+
+/* Formulario */
+.form-persona-elemento:disabled {
+    color: black;
+    background-color: inherit;
+    border-width: 0px;
+    text-align: center;
+}
+
+.form-persona-elemento:enabled {
+    color: rgba(0, 0, 100, 0.8);
+}
+
+.form-persona-elemento:enabled:required {
+    color: rgba(100, 0, 0, 0.8);
+}
+
+/* Campo de búsqueda */
+#campo-busqueda {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+/* Botón de búsqueda */
+.btn {
+    padding: 10px 20px;
+    background-color: #133e46;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1c7774;
+}
  
 

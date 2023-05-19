@@ -49,7 +49,7 @@ Lo que se ha hecho en este incremento y lo que no.
 
 Historias de usuario que se han hecho: hu-01, hu-06, hu-04
 
-Historias de usuario que No se han hecho:
+Historias de usuario que No se han hecho: hu-03
 
 # Sprint Retrospective
 
@@ -60,4 +60,6 @@ La elección de historias de usuario se eligieron rápidamente por los integrant
 Ha faltado un poco de coordinación en el grupo, ha faltado más ramas en el repositorio para que cada uno supiera lo que estaba haciendo cada uno de nuestros compañeros.
 
 Ha faltado mas comunicación interna en el equipo. Aunque hemos tenido una aptitud muy positiva a ayudarnos mutuamente.
+
+Durante esta sprint, hemos logrado completar las tareas asignadas dentro del marco de tiempo establecido. Sin embargo, hemos enfrentado algunos obstáculos y retrasos en el camino, lo que nos ha llevado a tener que ajustar nuestras metas y prioridades en varias ocasiones.
 

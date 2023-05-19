@@ -10,7 +10,7 @@ Estudiante 1:
 
 Estudiante 2:
 - Nombre: José Ángel Ángeles Santiago 
-- Correo: @red.ujaen.es
+- Correo: jaas0010@red.ujaen.es
 
 Estudiante 3:
 - Nombre: Rafael Montes Expósito 
@@ -42,6 +42,10 @@ HU-04 terminada:
 
 <img src='imagenes/hu-04.png' heigth='100' width='360'>
 
+Tablero de trello al final:
+
+<img src='imagenes/trello-final.PNG' heigth='100' width='360'>
+
 
 # Sprint Review
 
@@ -49,7 +53,8 @@ Lo que se ha hecho en este incremento y lo que no.
 
 Historias de usuario que se han hecho: hu-01, hu-06, hu-04
 
-Historias de usuario que No se han hecho: hu-03
+Historias de usuario que No se han hecho: hu-03, hu-02
+Las historias de usuario 02 y 03 debian de haber sido hechas por los estudiantes 2 y 3 (en la parte superior del readme se encuentra la enumeración de cada estudiante), pero por cuestión de tiempo y dificultad en la implementación del código, no se han podido llevar a cabo.
 
 # Sprint Retrospective
 

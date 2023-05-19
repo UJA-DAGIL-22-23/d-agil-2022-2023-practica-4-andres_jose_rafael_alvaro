@@ -51,9 +51,10 @@ Tablero de trello al final:
 
 Lo que se ha hecho en este incremento y lo que no.
 
-Historias de usuario que se han hecho: hu-01, hu-06, hu-04
+Historias de usuario que se han hecho: hu-01 (estudiante 1), hu-06 (estudiante 1), hu-04 (estudiante 4)
 
 Historias de usuario que No se han hecho: hu-03, hu-02
+
 Las historias de usuario 02 y 03 debian de haber sido hechas por los estudiantes 2 y 3 (en la parte superior del readme se encuentra la enumeración de cada estudiante), pero por cuestión de tiempo y dificultad en la implementación del código, no se han podido llevar a cabo.
 
 # Sprint Retrospective
@@ -68,3 +69,6 @@ Ha faltado mas comunicación interna en el equipo. Aunque hemos tenido una aptit
 
 Durante esta sprint, hemos logrado completar las tareas asignadas dentro del marco de tiempo establecido. Sin embargo, hemos enfrentado algunos obstáculos y retrasos en el camino, lo que nos ha llevado a tener que ajustar nuestras metas y prioridades en varias ocasiones.
 
+## Release
+
+Nombre de la release: sprint_v1_19-05-2023
